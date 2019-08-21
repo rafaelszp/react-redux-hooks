@@ -15,8 +15,11 @@ const Toggle = () => {
         checked={ui.toggle}
         onChange={() => dispatch({ type: TOGGLE })}
       />
+      {" dispatch({ type: TOGGLE })"}
+
       <p>Method 2</p>
       <input type="checkbox" checked={ui.toggle} onChange={() => toggle()} />
+      {" toggle()"}
     </div>
   );
 };
